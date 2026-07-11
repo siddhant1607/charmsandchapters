@@ -1,0 +1,154 @@
+/* ============================================
+   Collections Page Styles
+   ============================================ */
+
+.pageHeader {
+  padding-top: calc(var(--nav-height) + var(--space-4xl));
+  padding-bottom: var(--space-3xl);
+  background-color: var(--color-blush);
+  text-align: center;
+}
+
+.pageHeaderInner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .pageHeaderInner {
+    padding: 0 var(--space-2xl);
+  }
+}
+
+.pageTitle {
+  font-family: var(--font-display), serif;
+  font-size: var(--text-h1);
+  margin-bottom: var(--space-md);
+}
+
+.pageSubtitle {
+  color: var(--color-stone);
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+/* Filter Tabs */
+.filters {
+  padding: var(--space-xl) 0;
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 10;
+  background-color: var(--color-cream);
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.filtersInner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.filtersInner::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .filtersInner {
+    padding: 0 var(--space-2xl);
+    justify-content: center;
+    gap: var(--space-md);
+  }
+}
+
+.filterTab {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1.5px solid var(--color-sand);
+  background-color: transparent;
+  color: var(--color-stone);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.filterTab:hover {
+  border-color: var(--color-rose);
+  color: var(--color-rose);
+}
+
+.filterTabActive {
+  background-color: var(--color-rose);
+  border-color: var(--color-rose);
+  color: var(--color-cream);
+}
+
+/* Product Grid Section */
+.productsSection {
+  padding: var(--space-2xl) 0 var(--space-4xl);
+}
+
+.productsInner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .productsInner {
+    padding: 0 var(--space-2xl);
+  }
+}
+
+.resultsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.resultsCount {
+  font-size: var(--text-small);
+  color: var(--color-stone);
+}
+
+.sortSelect {
+  padding: 8px 16px;
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+  cursor: pointer;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-4xl) var(--space-lg);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+}
+
+.emptyTitle {
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-sm);
+}
+
+.emptyDesc {
+  color: var(--color-stone);
+}
