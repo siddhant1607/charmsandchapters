@@ -1,4 +1,5 @@
 import { Playfair_Display, Inter, Cormorant_Garamond } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import './globals.css';
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
